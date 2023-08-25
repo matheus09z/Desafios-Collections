@@ -1,6 +1,4 @@
-package Desafio2;
-
-import java.math.BigDecimal;
+package List.Desafio2;
 
 public class Item {
     private String nome;

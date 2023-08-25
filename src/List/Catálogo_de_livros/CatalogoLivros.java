@@ -1,4 +1,4 @@
-package Catálogo_de_livros;
+package List.Catálogo_de_livros;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,24 +25,26 @@ public class CatalogoLivros {
                     livro1.add(livro);
                 }
             }
+            return livro1;
+        } else {
+       throw new RuntimeException("lista está vazia");
+
         }
-        return livro1;
-
-
     }
-
-
-    List<Livro> pesquisarPorIntervaloAnos(int anoInicial, int anoFinal) {
-        List<Livro> livros = new ArrayList<>();
-        for (Livro livro : livro) {
-            if (livro.getAnoDePublicacao() >= anoInicial && livro.getAnoDePublicacao() <= anoFinal) {
-                livros.add(livro);
-
+   public List<Livro> pesquisarPorIntervaloAnos(int anoInicial, int anoFinal) {
+        List<Livro> livrosPorIntervaloDeAnos = new ArrayList<>();
+        if(livrosPorIntervaloDeAnos.isEmpty()) {
+            for (Livro livro : livro) {
+                if (livro.getAnoDePublicacao() >= anoInicial && livro.getAnoDePublicacao() <= anoFinal) {
+                    livrosPorIntervaloDeAnos.add(livro);
+                }
             }
-        }
-        return livros = new ArrayList<>();
-    }
+            return livrosPorIntervaloDeAnos;
+        }else {
+            throw new RuntimeException("Lista está vazia");
 
+        }
+    }
     public Livro pesquisarPorTitulo(String titulo) {
             Livro livros = null;
 

@@ -1,4 +1,4 @@
-package Desafio2;
+package List.Desafio2;
 
 import java.util.ArrayList;
 import java.util.List;
